@@ -10,8 +10,10 @@ systime = 0
 maxtime = int(input())  # read an integer number of steps (>0)
 
 state = "red"
+systeme = 0
 
-print(f"Time {systime:03} State {state}")
+print(f"Time {systime:03} State
+{state}")
 while systime < maxtime: 
   for light in states:
     for _ in range (states[light]):
@@ -19,8 +21,10 @@ while systime < maxtime:
         break
         
         state = light 
-        print(f"Time {systime:03} state {state}") 
-        systime += 1
+        systeme += 1
+        print(f"Time {systime:03} 
+        State {state}") 
+        
         if systime >= maxtime: 
           break 
     
