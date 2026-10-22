@@ -13,21 +13,20 @@ state = "red"
 duration = 0
 
 while systime < maxtime: 
-  print(f"Time {systime:03} State
-{state}")
+  print(f"Time {systime:03} State {state}")
   systime += 1 
   duration += 1 
- if duration == states[state]:
+  if duration == states[state]:
     duration = 0
 
     if state == "red":
-    state = "red_amber"
+        state = "red_amber"
     elif state == "red_amber":
-      state = 'green"
+        state = "green"
     elif state == "green":
-      state = "amber"
+        state = "amber"
     else:
-     state = 'red"
+        state = "red"
   
  
 
