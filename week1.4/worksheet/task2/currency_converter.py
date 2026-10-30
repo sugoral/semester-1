@@ -27,7 +27,7 @@ def currency_converter(amount, from_currency, to_currency):
     if to_currency not in conversion_rate[from_currency]:
         return None
     
-    return amount * conversion_rate[from_currency]:
+    return amount * conversion_rate[from_currency][to_currency]
     
 
 # Submit only this file currency_converter.py with the completed function.
