@@ -1,0 +1,14 @@
+CHIP A6Q2 {
+    IN Q, U, T;
+    OUT P;
+
+    PARTS:
+    Not(in=Q, out=nQ);
+    Not(in=U, out=nU);
+
+    Or(a=nQ, b=nU, out=or1);
+    Or(a=nQ, b=nU, out=or2);
+
+    And(a=or1, b=or2, out=andResult);
+    And(a=T, b=andResult, out=P);
+}
